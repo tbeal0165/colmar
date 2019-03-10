@@ -377,8 +377,9 @@ footer {
 	background-color: var(--header);
 	color: var(--header-color1);
 }
+
 footer span {
-	font-size: 2.0rem;
+	font-size: 1.6rem;
 	flex-grow: 1;
 }
 
@@ -396,6 +397,7 @@ footer ul li {
 
 footer a {
 	color: var(--header-color2);
+	font-size: 1.6rem;
 }
 
 footer a:visited {
