@@ -1,0 +1,165 @@
+/* Mobile CSS */
+
+/* Varialbles */
+
+:root {
+	--header: #DCDCDC;
+    --bg-color1: #325C74;
+    --bg-color1-light: #658FA7;
+    --bg-color2: #606060;
+	--header-color1: #606060;
+	--header-color2: #404040;
+	--text-color: #FFF;
+
+	--width: 100%;
+}
+
+.body {
+    margin: 0;
+	padding: 0;
+}
+
+.desktop {
+    display: none;
+}
+
+.page-wrap {
+	width: var(--width);
+}
+
+.main {
+    width: auto;
+    padding: 0 0;
+}
+
+.secondary {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin: 0 0;
+    padding: 0 0;
+}
+
+.h-box {
+    flex-direction: column;
+}
+
+.h-box .picture {
+    width: var(--width);
+}
+
+.h-box .text {
+    width: var(--width);
+}
+/* Header */ 
+
+header {
+    width: var(--width);
+}
+
+header nav .mobile {
+    display: inline;
+}
+
+header nav .mobile img {
+	color: var(--header-color1);
+	padding: 0 1rem;
+}
+
+/* Banner */
+
+.banner {
+    flex-direction: column;
+}
+
+.banner .main {
+	margin: 0 0;
+}
+
+.banner .main img {
+    width: var(--width);
+}
+
+.banner .secondary {
+    padding: 3.2rem 1.6rem;
+}
+
+.banner .secondary h1 {
+    margin-bottom: 3.2rem;
+    width: var(--width);
+}
+
+.banner .secondary span {
+    width: var(--width);
+}
+
+/* Info */
+
+.info .secondary {
+    margin: 1.6rem 1.6rem 3.2rem 1.6rem;
+}
+
+.info .secondary .h-box {
+    margin: 0 auto;
+    padding: 0 0 6.4rem 0;
+}
+
+.info .secondary .h-box.bottom {
+    padding: 0 0;
+}
+
+.h-box .mobile {
+    display: inline;
+}
+
+.h-box .text {
+    margin-top: 1.75rem;
+}
+
+/* Education */
+
+.education {
+    padding: 0 1.6rem 2.4rem 1.6rem;
+}
+
+.education h1 {
+    margin: 3.2rem 0 1.6rem 0;
+}
+
+.education #boxes {
+    display: none;
+}
+
+.education .mobile {
+    display: block;
+}
+
+.education .mobile ul li {
+    font-size: 1.6rem;
+    padding: 1.6rem 0 2.4rem 1.6rem;
+    background-color: var(--bg-color1-light);
+    margin-bottom: .8rem;
+}
+
+/* Thesis */
+.thesis {
+    padding-bottom: 2.4rem;
+}
+
+.thesis #content {
+    flex-direction: column;
+}
+
+.thesis .desktop {
+    display: none;
+}
+
+.thesis h1 {
+    margin: 3.2rem 0 1.6rem 0;
+    padding: 0 0;
+}
+
+.thesis .main {
+    margin: 0;
+    width: 100%;
+}

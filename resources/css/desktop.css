@@ -1,0 +1,403 @@
+/* Varialbles */
+
+:root {
+	--header: #DCDCDC;
+	--bg-color1: #325C74;
+	--bg-color1-light: #658FA7;
+	--bg-color2: #606060;
+	--header-color1: #606060;
+	--header-color2: #404040;
+	--text-color: #FFF;
+
+	--width: 75%;
+}
+
+/* Universal Styles */
+
+html {
+	font-size: 62.5%;
+}
+
+body{
+	font-family: 'Volkhov', serif;
+	background-color: #181818 ;
+}
+
+h1, h2, h3 {
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 3.6rem;
+}
+
+h2 {
+	font-size: 3.2rem;
+}
+
+h3 {
+	font-size: 2.8rem;
+}
+
+a {
+	text-decoration: none;
+	color: var(--text-color);
+	font-size: 2.0rem;
+}
+
+a:visited {
+	color: var(--text-color);
+}
+
+.page-wrap {
+	width: var(--width);
+    margin: 0 auto;
+}
+
+.banner,
+.info,
+.education,
+.thesis,
+footer {
+	color: var(--text-color);
+}
+
+.main {
+	width: 60%;
+}
+
+.main img {
+	height: auto;
+	width: 100%;
+}
+
+.secondary {
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+}
+
+.h-box {
+	height: 33%;
+	display: flex;
+	align-content: center;
+	flex-grow: 1;
+}
+
+.top {
+	align-content: flex-start;
+	padding-bottom:1rem;
+}
+
+.h-box .picture {
+	vertical-align: middle;
+	height: auto;
+	width: 35%;
+}
+
+.h-box img {
+	height: auto;
+	max-width: 100%;
+}
+
+.h-box .text {
+	width: 65%;
+	text-align: left;
+	align-content: center;
+}
+
+/* Header */
+
+header {
+	position: fixed;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	background-color: var(--header);
+	max-height: 6.4rem;
+	margin: 0 auto;
+	width: var(--width);
+}
+
+.logo {
+	height: 3.2rem;
+	margin: 1.6rem 0 1.6rem 2.4rem;
+	display: flex;
+	align-items: center;
+	flex-grow: 1;
+
+}
+
+.logo img {
+	width: auto;
+	height: 100%;
+}
+
+.logo span {
+	color: var(--header-color1);
+	font-size: 2.4rem;
+}
+
+.logo .heavy {
+	color: var(--header-color2);
+	font-weight: 900;
+}
+
+header nav .mobile {
+	display: none;
+}
+
+nav {
+	margin-right: 0.8rem;
+}
+
+nav span {
+	font-size: 2rem;
+	margin-right: 1.6rem;
+}
+
+nav span a {
+	color: var(--header-color1);
+}
+
+nav span a:visited {
+	color: var(--header-color1);
+}
+
+header a:hover {
+	font-weight: 600;
+	color: var(--header-color2);
+}
+
+/* Banner */
+
+.banner {
+	display: flex;
+	background-color: var(--bg-color1);
+	padding-top: 6.4rem;
+}
+
+.banner .main {
+	margin: 3.2rem 0 3.2rem 2.4rem;
+}
+
+.banner .secondary {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	justify-content: center;
+	align-items: flex-start;
+	padding:0 2.4rem;
+}
+
+.banner .secondary h1 {
+	margin-bottom: 2.4rem;
+}
+
+.banner .secondary h2 {
+	font-weight: normal;
+	margin-bottom: 2.4rem;
+}
+
+.banner .secondary span {
+	align-self: center;
+	background-color: var(--header-color1);
+	width: 85%;
+	padding: .8rem 0;
+	font-size: 2.4rem;
+	text-align: center;
+}
+
+.banner .secondary span:hover {
+	background-color: var(--header-color2);
+	font-weight: bold;
+}
+
+/* Info */
+
+.info {
+	display: flex;
+	align-items: space-between;
+	background-color: var(--bg-color2);
+}
+
+.info .main {
+	padding: 3.2rem 2.4rem;
+}
+
+.info .main h1 {
+	text-align: left;
+	margin-top: 3.2rem;
+	margin-bottom: 2.4rem;
+}
+
+.info .main p {
+	font-size: 1.8rem;
+	margin-bottom: 2.4rem;
+}
+
+.info .main span {
+	font-weight: bold;
+	font-size: 2.0rem;
+	margin-bottom: 2rem;
+}
+
+.secondary .mobile {
+	display: none;
+}
+
+.info .secondary {
+	margin: 3.2rem 0 3.2rem 1.6rem;
+}
+
+.secondary .text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 0 2rem;
+}
+
+.secondary .text h2 {
+	padding-bottom: .8rem;
+}
+
+.secondary .text p {
+	font-size: 1.8rem;
+	padding-bottom: .8rem;
+}
+
+/* Education */
+
+.education {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	padding: 0 7.2rem;
+	background-color: var(--bg-color1);
+}
+
+.education .mobile {
+	display: none;
+}
+
+.education h1 {
+	text-align: center;
+	margin-top: 3.2rem;
+	margin-bottom: 3.2rem;
+}
+
+#boxes {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+.v-box {
+	flex-basis: 31.5%;
+	align-content: space-between;
+	margin-bottom: 3.2rem;
+	background-color: var(--bg-color1-light);
+}
+
+.v-box img {
+	width: 100%;
+	height: auto;
+}
+
+.v-box h3 {
+	padding: 1.6rem 1.6rem;
+}
+
+.v-box p {
+	font-size: 2.0rem;
+	padding: .8rem 1.6rem; 
+}
+
+.v-box #desc {
+	padding: 0 0 2.4rem 1.6rem;
+	line-height: 1.25;
+}
+
+/* Thesis */
+
+.thesis {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--bg-color2);
+	padding-bottom: 3.2rem;
+}
+
+.thesis h1 {
+	text-align: center;
+	padding: 3.2rem 0;
+}
+
+.thesis .content {
+	display: flex;
+	flex-direction: row;
+}
+
+.thesis .main {
+	margin: 0 2.4rem;
+	width: 60%;
+}
+
+.thesis .main h2 {
+	margin: 2.4rem 0 0.8rem 0;
+}
+
+.thesis .main p {
+	font-size: 2.0rem;
+}
+
+.main video {
+	width: 100%;
+	height: auto;
+}
+
+.thesis .secondary {
+	width: 40%;
+}
+
+.thesis .secondary .boxes .h-box {
+	height: 45%;
+	padding: 1.6rem;
+}
+
+.thesis .secondary .boxes .h-box span {
+	font-size: 2.0rem;
+}
+
+/* Footer */
+
+footer {
+	display: flex;
+	padding: 1.6rem 2.4rem;
+	background-color: var(--header);
+	color: var(--header-color1);
+}
+footer span {
+	font-size: 2.0rem;
+	flex-grow: 1;
+}
+
+footer ul {
+	display: inline-block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+footer ul li {
+	display: inline;
+	padding: 0 1rem;
+}
+
+footer a {
+	color: var(--header-color2);
+}
+
+footer a:visited {
+	color: var(--header-color2);
+}
